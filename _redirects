@@ -9,8 +9,9 @@
 /discord https://discord.gg/5CFCFya
 /dis https://discord.gg/5CFCFya
 
-/github https://github.com/Pyciko/medge.link
-/git https://github.com/Pyciko/medge.link
+/github https://github.com/Pyciko/medge.link/blob/main/_redirects
+/git https://github.com/Pyciko/medge.link/blob/main/_redirects
+/list https://github.com/Pyciko/medge.link/blob/main/_redirects
 
 /map http://mirrorsedge.dice.se/
 /site http://mirrorsedge.dice.se/
