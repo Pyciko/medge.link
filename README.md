@@ -1,7 +1,7 @@
 # medge.link
 A short way to access the world of Mirror's Edge
 
-Commit to _redirects file, the format is:
-<br>/[keyword]       [webpage link]       (spaces count doesn't matter)
+Commit your additions to <strong>addresses</strong> dictionary in <strong>index.html</strong> file, the format is:
+<br>'/[keyword1], /[keyword2], /[keyword...]' : [destination],
 <br>Example:
-<br>/map       http://mirrorsedge.dice.se/
+<br>'/map, /site, /website' : 'http://mirrorsedge.dice.se/',

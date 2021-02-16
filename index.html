@@ -1,1 +1,47 @@
-<meta http-equiv="refresh" content="0; URL=https://mirrorsedgearchive.org" />
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //  The format is
+            //  '/[keyword1], /[keyword2], /[keyword...]' : [destination],
+            var addresses = {
+                '/arch, /archive' : 'https://mirrorsedgearchive.de',
+                '/arch/files, /archive/files' : 'https://archive.mirrorsedgearchive.de',
+
+                '/beta' : 'https://www.reddit.com/r/mirrorsedge/comments/64c70m/guide_how_to_play_the_catalyst_closed_beta_again',
+
+                '/twtc, /theway, /thewaytocatalyst' : 'https://www.youtube.com/watch?v=lOUvHnDJSv8',
+                '/events, /history, /story, /timeline' : 'https://archive.mirrorsedgearchive.de/Significant%20Events%20in%20Mirror%27s%20Edge%20History.png',
+                '/rededgeplus, /rep, /re+, /rededge+, /rededge' : 'https://rededge.carrd.co/',
+
+                '/me_ps, /me_psn, /me1_ps, /me1_psn' : 'https://store.playstation.com/en-us/product/UP0006-NPUB30838_00-MIEPSNNA00000001?scope=sceapp&psappver=17.11.2&smcid=psapp%3Alink%20menu',
+                '/mec_ps, /mec_psn' : 'https://store.playstation.com/en-us/product/UP0006-CUSA01566_00-PAMPLONA00000000',
+                '/me_xbox, /me1_xbox' : 'https://marketplace.xbox.com/Product/Mirrors-Edge/66acd000-77fe-1000-9115-d80245410850',
+                '/mec_xbox' : 'https://www.microsoft.com/store/p/Mirror-s-Edge-Catalyst/C48LBRJJCP2L',
+                '/me_steam, /me1_steam' : 'https://store.steampowered.com/app/17410/Mirrors_Edge',
+                '/mec_steam' : 'https://store.steampowered.com/app/1233570/Mirrors_Edge_Catalyst',
+                '/me_origin, /me1_origin' : 'https://www.origin.com/store/mirrors-edge/mirrors-edge',
+                '/mec_origin' : 'https://www.origin.com/store/mirrors-edge/mirrors-edge-catalyst',
+                
+                '/github, /git' : 'https://github.com/Pyciko/medge.link/blob/main/_redirects',
+                '/map, /site, /website' : 'http://mirrorsedge.dice.se/',
+                '/me3, /medge3, /mirrorsedge3' : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+                '/discord, /dis' : 'https://discord.gg/5CFCFya',
+                '/reddit' : 'https://www.reddit.com/r/mirrorsedge/',
+            };
+
+            path = window.location.pathname.replaceAll('_','');
+            var found = false;
+            for (const aliasesString of Object.keys(addresses)) {
+                var aliases = aliasesString.replaceAll(' ', '').replaceAll('_', '').split(',');
+                if (aliases.includes(path)) {
+                    window.location.replace(addresses[aliasesString]);
+                    found = true;
+                }
+            }
+            
+            //Will later open the redirects list
+            if (!found) window.location.replace('https://mirrorsedgearchive.org/');
+        </script>
+    </body>
+</html>
