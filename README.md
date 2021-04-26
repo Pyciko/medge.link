@@ -6,4 +6,4 @@ Commit your additions to <strong>addresses</strong> dictionary in <strong>index.
 <br>Example:
 <br>'/map /site /website' : 'http://mirrorsedge.dice.se/',
 
-!Commas between keywords are not needed!
+**Commas between keywords are not needed, just use spaces**
