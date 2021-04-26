@@ -5,3 +5,5 @@ Commit your additions to <strong>addresses</strong> dictionary in <strong>index.
 <br>'/[keyword1] /[keyword2] /[keyword...]' : [destination],
 <br>Example:
 <br>'/map /site /website' : 'http://mirrorsedge.dice.se/',
+
+!Commas between keywords are not needed!
